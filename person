@@ -1,0 +1,24 @@
+class Car {
+    public string $name;
+    public string $brand;
+    
+    public function startEngine(): string {
+        return "Mesin mobil {$this->brand} {$this->name} menyala...";
+    }
+
+    public function stopEngine(): string {
+        return "Mesin mobil {$this->brand} {$this->name} mati.";
+    }
+
+
+$avanza = new Car();
+$avanza->name = "Avanza";
+$avanza->brand = "Toyota";
+
+$almaz = new Car();
+$almaz->name = "Almaz";
+$almaz->brand = "Wuling";
+
+$mobilio = new Car();
+$mobilio->name = "Mobilio";
+$mobilio->brand = "Honda";
